@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.listhammer" name="List Hammer" version="0.1" provider-name="kb3">
+	<requires>
+		<import addon="xbmc.python" version="2.26.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+	</extension>
+	<extension point="xbmc.addon.metadata">	
+		<language></language>
+		<summary lang="en_GB">Brute force support for skin</summary>
+		<description lang="en_GB">Creates lists, and supports other functions for Skin.HammerNail</description>
+		<platform>all</platform>
+		<forum></forum>
+		<source></source>
+	</extension>
+    <!-- <extension point="kodi.context.item"> -->
+		<!-- <menu id="kodi.core.main"> -->
+			<!-- <item library="contextitem1.py"> -->
+				<!-- <label>TestLabel</label> -->
+				<!-- <visible>true</visible> -->
+			<!-- </item> -->
+		<!-- </menu> -->
+	<!-- </extension> -->
+</addon>
