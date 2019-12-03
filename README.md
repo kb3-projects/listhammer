@@ -2,7 +2,7 @@ Credit to ronie for the Playlists Script - https://kodi.wiki/view/Add-on:Playlis
 
 Many thanks to the users on the kodi forums.
 
-### INFO FOR USE
+## INFO FOR USE
 
 This script generates a multitude of results to help with skin.hammernail 
 
