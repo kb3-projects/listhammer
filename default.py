@@ -441,7 +441,54 @@ if ( sys.argv[1] == "hidelist" ):
         
         xbmc.executebuiltin('Skin.SetBool(HideList,True)')
         xbmc.executebuiltin('SetFocus(50000)')  
+        
 
+if ( sys.argv[1] == "NeedleUp" ):
+
+        # NeedleFrom = xbmc.getInfoLabel('skin.string(NeedleTo)')
+        # xbmc.executebuiltin(('Skin.SetString(NeedleFrom2,%s)') % NeedleFrom)
+        # NeedleToInt = int(NeedleFrom)+30 
+        # NeedleTo = str(int(NeedleFrom)+30)
+        
+        # xbmc.executebuiltin(('Skin.SetString(NeedleFrom,%s)') % NeedleFrom)
+        # xbmc.executebuiltin(('Skin.SetString(NeedleTo,%s)') % NeedleTo)
+        
+        # time.sleep(.5)
+        # xbmc.executebuiltin('Skin.Reset(RotateNeedle)')
+        # time.sleep(.5)
+        # xbmc.executebuiltin('Skin.SetBool(RotateNeedle)')
+
+    log ("moving up!!!") 
+ 
+    for angle in range(0, 15):
+        
+        xbmc.executebuiltin(('Skin.SetString(needleangle,%d)') % angle)
+        time.sleep(0.2)
+        log(angle) 
+
+        
+        
+        # log(NeedleFrom) 
+        # log(NeedleTo) 
+
+if ( sys.argv[1] == "NeedleDown" ):
+
+        NeedleFrom = xbmc.getInfoLabel('skin.string(NeedleTo)')
+        # xbmc.executebuiltin(('Skin.SetString(NeedleFrom2,%s)') % NeedleFrom)
+        # NeedleToInt = int(NeedleFrom)-30 
+        NeedleTo = str(int(NeedleFrom)-30)
+        
+        xbmc.executebuiltin(('Skin.SetString(NeedleFrom,%s)') % NeedleFrom)
+        xbmc.executebuiltin(('Skin.SetString(NeedleTo,%s)') % NeedleTo)
+        
+        # time.sleep(.5)
+        # xbmc.executebuiltin('Skin.Reset(RotateNeedle)')
+        # time.sleep(.5)
+        # xbmc.executebuiltin('Skin.SetBool(RotateNeedle)')
+        
+        log('Needle Down !!!!') 
+        log(NeedleFrom) 
+        log(NeedleTo) 
 # log('script stopped')
 
 
